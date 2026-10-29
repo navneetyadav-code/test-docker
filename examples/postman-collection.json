@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Mock Personal Information API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health"
+      }
+    },
+    {
+      "name": "All people",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/people"
+      }
+    },
+    {
+      "name": "Limit 5",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/people?limit=5"
+      }
+    },
+    {
+      "name": "Filter by city",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/people?city=Austin"
+      }
+    },
+    {
+      "name": "Search engineer",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/people?search=engineer"
+      }
+    },
+    {
+      "name": "Person by ID",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/people/1"
+      }
+    },
+    {
+      "name": "Not found",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/people/999"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ]
+}

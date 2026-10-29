@@ -1,0 +1,11 @@
+{
+  "name": "mock-personal-info-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local mock API serving 20 fictional personal-information records for testing.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  }
+}
